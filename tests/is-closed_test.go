@@ -4,7 +4,7 @@ import (
 	"fmt"
 	"testing"
 
-	helpersChannels "github.com/codemodify/systemkit-channels"
+	helpersChannels "github.com/codemodify/systemkit-helpers-channels"
 )
 
 func Test_is_closed(t *testing.T) {
