@@ -18,6 +18,10 @@ func Test_is_closed(t *testing.T) {
 		fmt.Println("A-CLOSED-NOT-1")
 	}
 
+	go func() {
+		c <- []byte{}
+	}()
+
 	if helpersChannels.IsClosed(c) {
 		fmt.Println("A-CLOSED-2")
 	} else {
